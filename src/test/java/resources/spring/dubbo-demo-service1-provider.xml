@@ -20,4 +20,7 @@
     <dubbo:reference id="service3" interface="com.threeq.test.dubbo.tracing.api.Service2"
                      version="1.0.0"/>
 
+    <dubbo:provider filter="spanProvider" retries="0" timeout="30000" />
+
+    <dubbo:consumer filter="spanConsumer" retries="0" timeout="30000"  />
 </beans>

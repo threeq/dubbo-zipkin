@@ -17,4 +17,7 @@
                    ref="service2" version="1.0.0"
                    retries="0"/>
 
+    <dubbo:provider filter="spanProvider" retries="0" timeout="30000" />
+
+    <dubbo:consumer filter="spanConsumer" retries="0" timeout="30000"  />
 </beans>
