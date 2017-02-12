@@ -1,0 +1,16 @@
+version: "2.1"
+
+services:
+    zookeeper:
+        build:
+            context: ./docker/zookeeper
+        ports:
+          - "2181:2181"
+          - "2888:2888"
+          - "3888:3888"
+
+    zipkin:
+        build:
+            context: ./docker/zipkin
+        ports:
+          - 9411:9411

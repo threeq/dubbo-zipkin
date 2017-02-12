@@ -1,0 +1,2 @@
+spanConsumer=com.threeq.dubbo.tracing.ConsumerSpanFilter
+spanProvider=com.threeq.dubbo.tracing.ProviderSpanFilter
